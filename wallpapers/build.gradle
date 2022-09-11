@@ -1,0 +1,21 @@
+plugins {
+    id 'com.android.dynamic-feature'
+}
+
+android {
+    compileSdk 32
+
+    defaultConfig {
+        minSdk 23
+    }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation project(':app')
+}
